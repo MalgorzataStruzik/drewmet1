@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <title>drewmet</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#fafafa">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <!-- nawigacja strony // nagłówek strony-->
+    <header>
+       
+       <a class="logo" href="index.html"><img src="img/logo.png" style="width:100%"></a>
+        <div class="center-wrapper">
+           
+          <!-- <ul class="tools">
+                <li><a class="search" href="#">Search</a></li>
+                <!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                <!-- <li><a href="#">facebook</a></li> 
+            </ul> -->
+            
+            <nav class="main-nav">
+                <ul class="main-menu">
+                    <li><a href="index.html"><i class="material-icons" style="font-size:30px">home</i></a></li>
+                    <li><a href="oFirmie.html">O firmie</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="praca.html">Praca</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+            
+        </div>
+    </header>
+    
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+           <!-- <div class="numbertext">1 / 3</div> -->
+            <img src="img/home_picture.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <!--<div class="numbertext">2 / 3</div>-->
+            <img src="img/home_picture.png" style="width:100%">
+        </div>
+
+          <div class="mySlides fade">
+          <!--  <div class="numbertext">3 / 3</div>-->
+            <img src="img/home_picture.png" style="width:100%">
+         </div>
+
+       </div>
+<br>
+
+       <div style="text-align:center">
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+       </div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+      
+      <div id="cos">
+      
+      <p> bla bla bla</p>
+       
+    </div>
+    
+  <footer>
+      <div class="main_footer">
+          <p>
+            <span>
+                <span class="icon">
+                    <i class="material-icons" style="font-size:25px">phone</i>
+                </span>
+                <span class="footer_text">tel: 012 - 256 04 30</span>
+            </span>
+            <span>
+                <span class="icon">
+                    <i class="material-icons" style="font-size:25px">email</i>
+                </span>
+                <span class="footer_text">biuro@drewmet.net</span>
+            </span>         
+          </p>
+      </div>
+  </footer>
+</body>
+
+</html>
